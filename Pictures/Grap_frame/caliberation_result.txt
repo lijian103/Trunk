@@ -1,0 +1,3 @@
+../../../Pictures/Grap_frame/chess1.bmp
+image_size.width = 640
+image_size.height = 480
