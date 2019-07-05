@@ -135,6 +135,7 @@ public:
         font.setPointSize(14);
         tabWidget->setFont(font);
         tabWidget->setAutoFillBackground(true);
+        tabWidget->setStyleSheet(QStringLiteral("QTabBar::tab{width: 200px;height:50px;font:30px;color:black}"));
         tabWidget->setTabPosition(QTabWidget::North);
         tabWidget->setTabShape(QTabWidget::Rounded);
         tabWidget->setDocumentMode(false);
