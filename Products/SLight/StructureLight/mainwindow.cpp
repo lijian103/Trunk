@@ -33,6 +33,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    //ui->tabWidget->setStyleSheet("QTabBar::tab:selected {color: blue;}");
+
     QTimer *timer = new QTimer(this);
     connect(timer,SIGNAL(timeout()),this,SLOT(timerUpDate()));
     timer->start(1000);
@@ -43,7 +46,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QTimer *timerShowHardwarePictures = new QTimer(this);
     connect(timerShowHardwarePictures,SIGNAL(timeout()),this,SLOT(showHardwarePictures()));
-    timerShowHardwarePictures->start(1000);
+    timerShowHardwarePictures->start(2000);
+
+    QTimer *timerCheckBuffersInQueue_total = new QTimer(this);
+    connect(timerCheckBuffersInQueue_total,SIGNAL(timeout()),this,SLOT(checkBuffersInQueue_total()));
+    timerCheckBuffersInQueue_total->start(2000);
 
     //开启一个线程
     this->new_thread=new std::thread(TestThread_1);
@@ -89,6 +96,29 @@ void MainWindow::timerUpDate()
     //设置系统时间显示格式
     ui->label->setText(str);
 
+}
+
+void MainWindow::checkBuffersInQueue_total()
+{
+    if(MainWindow::cameraMode == 2)
+    {
+        static int  old_nBuffersInQueue_total_1= 0;
+        static int  old_nBuffersInQueue_total_2= 0;
+        static int  old_nBuffersInQueue_total_3= 0;
+        if((nBuffersInQueue_total==old_nBuffersInQueue_total_1)&&(nBuffersInQueue_total==old_nBuffersInQueue_total_2)&&(nBuffersInQueue_total==old_nBuffersInQueue_total_3))
+        {
+            if(nBuffersInQueue_total != 0)
+            {
+                nBuffersInQueue_total=0;
+                image_id = 0;
+            }
+
+        }
+        old_nBuffersInQueue_total_3 = old_nBuffersInQueue_total_2;
+        old_nBuffersInQueue_total_2 =old_nBuffersInQueue_total_1;
+        old_nBuffersInQueue_total_1 = nBuffersInQueue_total;
+
+    }
 }
 
 
@@ -212,21 +242,21 @@ void MainWindow::showHardwarePictures()
 //         }
 //         gray_image = imread(Fileadd.toLatin1().data());  //读取图片        // 图像格式转换
          QImage disImage;
-         disImage.load("../../../Pictures/Hardware_trigger_frame/0.JPG");
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_5->setPixmap(QPixmap::fromImage(disImage));
+//         disImage.load("../../../Pictures/Hardware_trigger_frame/0.JPG");
+//         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+//         ui->label_5->setPixmap(QPixmap::fromImage(disImage));
 
-         disImage.load("../../../Pictures/Hardware_trigger_frame/1.JPG");
-         //ui->label_6->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_6->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_6->setPixmap(QPixmap::fromImage(disImage));
+//         disImage.load("../../../Pictures/Hardware_trigger_frame/1.JPG");
+//         //ui->label_6->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_6->size(), Qt::KeepAspectRatioByExpanding)));
+//         ui->label_6->setPixmap(QPixmap::fromImage(disImage));
 
-         disImage.load("../../../Pictures/Hardware_trigger_frame/2.JPG");
-         ui->label_7->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_7->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_7->setPixmap(QPixmap::fromImage(disImage));
+//         disImage.load("../../../Pictures/Hardware_trigger_frame/2.JPG");
+//         //ui->label_7->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_7->size(), Qt::KeepAspectRatioByExpanding)));
+//         ui->label_7->setPixmap(QPixmap::fromImage(disImage));
 
-         disImage.load("../../../Pictures/Hardware_trigger_frame/3.JPG");
-         //ui->label_8->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_8->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_8->setPixmap(QPixmap::fromImage(disImage));
+//         disImage.load("../../../Pictures/Hardware_trigger_frame/3.JPG");
+//         //ui->label_8->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_8->size(), Qt::KeepAspectRatioByExpanding)));
+//         ui->label_8->setPixmap(QPixmap::fromImage(disImage));
          myMutex.unlock();
     }
 

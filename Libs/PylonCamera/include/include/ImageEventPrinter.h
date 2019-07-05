@@ -15,6 +15,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/video/video.hpp>
 
+extern int image_id;
 using namespace cv;
 // Namespace for using cout.
 using namespace std;
@@ -36,9 +37,7 @@ namespace Pylon
 
         virtual void OnImageGrabbed( CInstantCamera& camera, const CGrabResultPtr& ptrGrabResult)
         {
-            std::cout << "OnImageGrabbed event for device " << camera.GetDeviceInfo().GetModelName() << std::endl;
-			static int image_id = 0;
-
+            std::cout << "OnImageGrabbed event for device " << camera.GetDeviceInfo().GetModelName() << std::endl;	
             // Image grabbed successfully?
 			//新建一个OpenCV image对象.
 			Mat openCvImage;
@@ -53,10 +52,11 @@ namespace Pylon
 				String image_name = "../../../Pictures/Hardware_trigger_frame/"+to_string(image_id);
 				cv::imwrite(image_name+".jpg", openCvImage);
 				image_id++;
-				if (image_id == 4)
-				{
-					image_id = 0;
-				}
+//                if (image_id == 9)
+//				{
+//					image_id = 0;
+//				}
+
 				//// Display the grabbed image.
 				////新建OpenCV display window.
 				//namedWindow("OpenCV Display Window", cv::WINDOW_AUTOSIZE); // other options: CV_AUTOSIZE, CV_FREERATIO

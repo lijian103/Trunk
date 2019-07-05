@@ -64,10 +64,15 @@ public:
     QSpacerItem *verticalSpacer_2;
     QSpacerItem *horizontalSpacer_2;
     QGridLayout *gridLayout_2;
-    QLabel *label_5;
-    QLabel *label_6;
-    QLabel *label_8;
-    QLabel *label_7;
+    QLabel *label_70_2;
+    QLabel *label_70_3;
+    QLabel *label_70_1;
+    QLabel *label_59_3;
+    QLabel *label_59_1;
+    QLabel *label_64_1;
+    QLabel *label_64_2;
+    QLabel *label_64_3;
+    QLabel *label_59_2;
     QVBoxLayout *verticalLayout_5;
     QGroupBox *groupBox;
     QVBoxLayout *verticalLayout_4;
@@ -140,6 +145,7 @@ public:
         tab_0->setObjectName(QStringLiteral("tab_0"));
         tab_0->setEnabled(true);
         tab_0->setAutoFillBackground(true);
+        tab_0->setStyleSheet(QStringLiteral(""));
         gridLayout_4 = new QGridLayout(tab_0);
         gridLayout_4->setSpacing(6);
         gridLayout_4->setContentsMargins(11, 11, 11, 11);
@@ -208,6 +214,7 @@ public:
         tabWidget->addTab(tab_0, QString());
         tab_1 = new QWidget();
         tab_1->setObjectName(QStringLiteral("tab_1"));
+        tab_1->setAutoFillBackground(true);
         tabWidget->addTab(tab_1, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -282,13 +289,8 @@ public:
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setSpacing(6);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        label_5 = new QLabel(tab_3);
-        label_5->setObjectName(QStringLiteral("label_5"));
-        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
-        label_5->setSizePolicy(sizePolicy1);
+        label_70_2 = new QLabel(tab_3);
+        label_70_2->setObjectName(QStringLiteral("label_70_2"));
         QPalette palette3;
         palette3.setBrush(QPalette::Active, QPalette::Base, brush);
         palette3.setBrush(QPalette::Active, QPalette::Window, brush3);
@@ -296,14 +298,14 @@ public:
         palette3.setBrush(QPalette::Inactive, QPalette::Window, brush3);
         palette3.setBrush(QPalette::Disabled, QPalette::Base, brush3);
         palette3.setBrush(QPalette::Disabled, QPalette::Window, brush3);
-        label_5->setPalette(palette3);
-        label_5->setAutoFillBackground(true);
-        label_5->setScaledContents(true);
+        label_70_2->setPalette(palette3);
+        label_70_2->setAutoFillBackground(true);
+        label_70_2->setScaledContents(true);
 
-        gridLayout_2->addWidget(label_5, 0, 0, 1, 1);
+        gridLayout_2->addWidget(label_70_2, 0, 1, 1, 1);
 
-        label_6 = new QLabel(tab_3);
-        label_6->setObjectName(QStringLiteral("label_6"));
+        label_70_3 = new QLabel(tab_3);
+        label_70_3->setObjectName(QStringLiteral("label_70_3"));
         QPalette palette4;
         palette4.setBrush(QPalette::Active, QPalette::Base, brush);
         palette4.setBrush(QPalette::Active, QPalette::Window, brush3);
@@ -311,14 +313,19 @@ public:
         palette4.setBrush(QPalette::Inactive, QPalette::Window, brush3);
         palette4.setBrush(QPalette::Disabled, QPalette::Base, brush3);
         palette4.setBrush(QPalette::Disabled, QPalette::Window, brush3);
-        label_6->setPalette(palette4);
-        label_6->setAutoFillBackground(true);
-        label_6->setScaledContents(true);
+        label_70_3->setPalette(palette4);
+        label_70_3->setAutoFillBackground(true);
+        label_70_3->setScaledContents(true);
 
-        gridLayout_2->addWidget(label_6, 0, 1, 1, 1);
+        gridLayout_2->addWidget(label_70_3, 0, 2, 1, 1);
 
-        label_8 = new QLabel(tab_3);
-        label_8->setObjectName(QStringLiteral("label_8"));
+        label_70_1 = new QLabel(tab_3);
+        label_70_1->setObjectName(QStringLiteral("label_70_1"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label_70_1->sizePolicy().hasHeightForWidth());
+        label_70_1->setSizePolicy(sizePolicy1);
         QPalette palette5;
         palette5.setBrush(QPalette::Active, QPalette::Base, brush);
         palette5.setBrush(QPalette::Active, QPalette::Window, brush3);
@@ -326,15 +333,14 @@ public:
         palette5.setBrush(QPalette::Inactive, QPalette::Window, brush3);
         palette5.setBrush(QPalette::Disabled, QPalette::Base, brush3);
         palette5.setBrush(QPalette::Disabled, QPalette::Window, brush3);
-        label_8->setPalette(palette5);
-        label_8->setAutoFillBackground(true);
-        label_8->setFrameShape(QFrame::NoFrame);
-        label_8->setScaledContents(true);
+        label_70_1->setPalette(palette5);
+        label_70_1->setAutoFillBackground(true);
+        label_70_1->setScaledContents(true);
 
-        gridLayout_2->addWidget(label_8, 1, 1, 1, 1);
+        gridLayout_2->addWidget(label_70_1, 0, 0, 1, 1);
 
-        label_7 = new QLabel(tab_3);
-        label_7->setObjectName(QStringLiteral("label_7"));
+        label_59_3 = new QLabel(tab_3);
+        label_59_3->setObjectName(QStringLiteral("label_59_3"));
         QPalette palette6;
         palette6.setBrush(QPalette::Active, QPalette::Base, brush);
         palette6.setBrush(QPalette::Active, QPalette::Window, brush3);
@@ -342,11 +348,82 @@ public:
         palette6.setBrush(QPalette::Inactive, QPalette::Window, brush3);
         palette6.setBrush(QPalette::Disabled, QPalette::Base, brush3);
         palette6.setBrush(QPalette::Disabled, QPalette::Window, brush3);
-        label_7->setPalette(palette6);
-        label_7->setAutoFillBackground(true);
-        label_7->setScaledContents(true);
+        label_59_3->setPalette(palette6);
+        label_59_3->setAutoFillBackground(true);
 
-        gridLayout_2->addWidget(label_7, 1, 0, 1, 1);
+        gridLayout_2->addWidget(label_59_3, 2, 2, 1, 1);
+
+        label_59_1 = new QLabel(tab_3);
+        label_59_1->setObjectName(QStringLiteral("label_59_1"));
+        QPalette palette7;
+        palette7.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette7.setBrush(QPalette::Active, QPalette::Window, brush3);
+        palette7.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette7.setBrush(QPalette::Inactive, QPalette::Window, brush3);
+        palette7.setBrush(QPalette::Disabled, QPalette::Base, brush3);
+        palette7.setBrush(QPalette::Disabled, QPalette::Window, brush3);
+        label_59_1->setPalette(palette7);
+        label_59_1->setAutoFillBackground(true);
+
+        gridLayout_2->addWidget(label_59_1, 2, 0, 1, 1);
+
+        label_64_1 = new QLabel(tab_3);
+        label_64_1->setObjectName(QStringLiteral("label_64_1"));
+        QPalette palette8;
+        palette8.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette8.setBrush(QPalette::Active, QPalette::Window, brush3);
+        palette8.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette8.setBrush(QPalette::Inactive, QPalette::Window, brush3);
+        palette8.setBrush(QPalette::Disabled, QPalette::Base, brush3);
+        palette8.setBrush(QPalette::Disabled, QPalette::Window, brush3);
+        label_64_1->setPalette(palette8);
+        label_64_1->setAutoFillBackground(true);
+        label_64_1->setFrameShape(QFrame::NoFrame);
+        label_64_1->setScaledContents(true);
+
+        gridLayout_2->addWidget(label_64_1, 1, 0, 1, 1);
+
+        label_64_2 = new QLabel(tab_3);
+        label_64_2->setObjectName(QStringLiteral("label_64_2"));
+        QPalette palette9;
+        palette9.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette9.setBrush(QPalette::Active, QPalette::Window, brush3);
+        palette9.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette9.setBrush(QPalette::Inactive, QPalette::Window, brush3);
+        palette9.setBrush(QPalette::Disabled, QPalette::Base, brush3);
+        palette9.setBrush(QPalette::Disabled, QPalette::Window, brush3);
+        label_64_2->setPalette(palette9);
+        label_64_2->setAutoFillBackground(true);
+
+        gridLayout_2->addWidget(label_64_2, 1, 1, 1, 1);
+
+        label_64_3 = new QLabel(tab_3);
+        label_64_3->setObjectName(QStringLiteral("label_64_3"));
+        QPalette palette10;
+        palette10.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette10.setBrush(QPalette::Active, QPalette::Window, brush3);
+        palette10.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette10.setBrush(QPalette::Inactive, QPalette::Window, brush3);
+        palette10.setBrush(QPalette::Disabled, QPalette::Base, brush3);
+        palette10.setBrush(QPalette::Disabled, QPalette::Window, brush3);
+        label_64_3->setPalette(palette10);
+        label_64_3->setAutoFillBackground(true);
+
+        gridLayout_2->addWidget(label_64_3, 1, 2, 1, 1);
+
+        label_59_2 = new QLabel(tab_3);
+        label_59_2->setObjectName(QStringLiteral("label_59_2"));
+        QPalette palette11;
+        palette11.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette11.setBrush(QPalette::Active, QPalette::Window, brush3);
+        palette11.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette11.setBrush(QPalette::Inactive, QPalette::Window, brush3);
+        palette11.setBrush(QPalette::Disabled, QPalette::Base, brush3);
+        palette11.setBrush(QPalette::Disabled, QPalette::Window, brush3);
+        label_59_2->setPalette(palette11);
+        label_59_2->setAutoFillBackground(true);
+
+        gridLayout_2->addWidget(label_59_2, 2, 1, 1, 1);
 
 
         gridLayout_3->addLayout(gridLayout_2, 0, 0, 1, 1);
@@ -416,15 +493,15 @@ public:
 
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        QPalette palette7;
+        QPalette palette12;
         QBrush brush4(QColor(255, 0, 0, 255));
         brush4.setStyle(Qt::SolidPattern);
-        palette7.setBrush(QPalette::Active, QPalette::WindowText, brush4);
-        palette7.setBrush(QPalette::Inactive, QPalette::WindowText, brush4);
+        palette12.setBrush(QPalette::Active, QPalette::WindowText, brush4);
+        palette12.setBrush(QPalette::Inactive, QPalette::WindowText, brush4);
         QBrush brush5(QColor(120, 120, 120, 255));
         brush5.setStyle(Qt::SolidPattern);
-        palette7.setBrush(QPalette::Disabled, QPalette::WindowText, brush5);
-        label->setPalette(palette7);
+        palette12.setBrush(QPalette::Disabled, QPalette::WindowText, brush5);
+        label->setPalette(palette12);
         QFont font3;
         font3.setFamily(QString::fromUtf8("\345\256\213\344\275\223"));
         font3.setPointSize(12);
@@ -472,10 +549,15 @@ public:
         toolButton->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
         pushButton_2->setText(QApplication::translate("MainWindow", "\345\255\230\345\233\276", Q_NULLPTR));
         pushButton_4->setText(QApplication::translate("MainWindow", "\347\224\237\346\210\220\347\202\271\344\272\221", Q_NULLPTR));
-        label_5->setText(QString());
-        label_6->setText(QString());
-        label_8->setText(QString());
-        label_7->setText(QString());
+        label_70_2->setText(QString());
+        label_70_3->setText(QString());
+        label_70_1->setText(QString());
+        label_59_3->setText(QString());
+        label_59_1->setText(QString());
+        label_64_1->setText(QString());
+        label_64_2->setText(QString());
+        label_64_3->setText(QString());
+        label_59_2->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "\347\273\223\346\236\204\345\205\211\346\211\253\346\217\217", Q_NULLPTR));
         groupBox->setTitle(QApplication::translate("MainWindow", "\347\233\270\346\234\272\346\250\241\345\274\217", Q_NULLPTR));
         radioButton_1->setText(QApplication::translate("MainWindow", "\345\205\263\351\227\255\347\233\270\346\234\272", Q_NULLPTR));

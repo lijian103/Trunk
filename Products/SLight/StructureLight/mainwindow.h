@@ -46,6 +46,7 @@ private slots:
     void selectDirPathDialg();
     void selectDirPathDialg_grapMode();
     void showGrapPictures();
+    void checkBuffersInQueue_total();
 };
 
 

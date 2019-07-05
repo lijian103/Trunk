@@ -33,6 +33,8 @@ using namespace std;
 // Namespace for using opencv.
 using namespace cv;
 
+extern int  nBuffersInQueue_total;
+extern int  image_id ;
 namespace Ui {
 class PylonCamera;
 }

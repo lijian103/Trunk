@@ -1,6 +1,8 @@
 #include "Inc/Camera.h"
 #include "mainwindow.h"
 
+int  nBuffersInQueue_total = 0;
+int  image_id = 0;
 PylonCamera::PylonCamera()
 {
    // Create an instant camera object with the camera device found first.
@@ -155,6 +157,14 @@ int PylonCamera::Grab_Strategies( )
                 }
                 myMutex.unlock();
                 cout << "Retrieved " << nBuffersInQueue << " grab results from output queue." << endl << endl;
+                nBuffersInQueue_total = nBuffersInQueue_total + nBuffersInQueue;
+                if(nBuffersInQueue_total == 9)
+                {
+                    cout << "成功进行一次图像序列采集，采集图像数为："<< nBuffersInQueue_total<< endl ;
+                    nBuffersInQueue_total = 0;
+                    image_id = 0;
+                }
+
 
         }
         else
