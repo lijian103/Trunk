@@ -57,6 +57,9 @@ MainWindow::MainWindow(QWidget *parent) :
     this->new_thread=new std::thread(TestThread_1);
     this->new_thread->detach();
 
+    //**************Button
+    connect(ui->pushButton_4,SIGNAL(clicked(bool)),
+                this,SLOT(generate3DCloud()));
     //**************Radion Button
     groupButton1=new QButtonGroup(this);
     groupButton1->addButton(ui->radioButton_1,0);
@@ -164,13 +167,6 @@ void MainWindow::grapPictures()
 void MainWindow::saveFourPictures()
 {
     QString path = ui->lineEdit_2->text();
-//    QFileInfo fileinfo(path);
-//    if(fileinfo.isFile())
-//    {
-//      qDebug()<<"please input a Dir path rather than a file path!!!!";
-//    }
-//    else if (fileinfo.isDir())
-//    {
     QDir temp;
     bool exist = temp.exists(path);
     if(!exist)
@@ -210,14 +206,18 @@ void MainWindow::cameraModeChoose()
       {
           case 0:
               MainWindow::cameraMode = 0;
+              ui->tabWidget->setCurrentIndex(0);
               break;
           case 1:
               MainWindow::cameraMode = 1;
+              ui->tabWidget->setCurrentIndex(0);
               break;
           case 2:
               MainWindow::cameraMode = 2;
+              ui->tabWidget->setCurrentIndex(3);
               break;
           case 3:
+              ui->tabWidget->setCurrentIndex(0);
               MainWindow::cameraMode = 3;
               break;
           default:
@@ -233,53 +233,20 @@ void MainWindow::showHardwarePictures()
 
     if(MainWindow::cameraMode == 2)
     {
-
+       static QLabel *temp[]={ui->label_70_1,ui->label_70_2,ui->label_70_3,
+                        ui->label_64_1,ui->label_64_2,ui->label_64_3,
+                        ui->label_59_1,ui->label_59_2,ui->label_59_3
+                       };
          myMutex.lock();
-//         Mat gray_image;
-//         QString Fileadd = "../../../Pictures/Hardware_trigger_frame/0.JPG";
-//         if(Fileadd.isEmpty())
-//         {
-//             QMessageBox::information(this,"警告","没有选择文件");
-//             return ;
-//         }
-//         gray_image = imread(Fileadd.toLatin1().data());  //读取图片        // 图像格式转换
          QImage disImage;
          QString path="../../../Pictures/Hardware_trigger_frame/";
-         disImage.load(path+QString::fromStdString(img_name[0]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_70_1->setPixmap(QPixmap::fromImage(disImage));
+         for (int i=0;i<9;i++)
+         {
+             disImage.load(path+QString::fromStdString(img_name[i]));
 
-         disImage.load(path+QString::fromStdString(img_name[1]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_70_2->setPixmap(QPixmap::fromImage(disImage));
-
-         disImage.load(path+QString::fromStdString(img_name[2]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_70_3->setPixmap(QPixmap::fromImage(disImage));
-
-         disImage.load(path+QString::fromStdString(img_name[3]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_64_1->setPixmap(QPixmap::fromImage(disImage));
-
-         disImage.load(path+QString::fromStdString(img_name[4]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_64_2->setPixmap(QPixmap::fromImage(disImage));
-
-         disImage.load(path+QString::fromStdString(img_name[5]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_64_3->setPixmap(QPixmap::fromImage(disImage));
-
-         disImage.load(path+QString::fromStdString(img_name[6]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_59_1->setPixmap(QPixmap::fromImage(disImage));
-
-         disImage.load(path+QString::fromStdString(img_name[7]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_59_2->setPixmap(QPixmap::fromImage(disImage));
-
-         disImage.load(path+QString::fromStdString(img_name[8]));
-         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-         ui->label_59_3->setPixmap(QPixmap::fromImage(disImage));
+             //temp[i]->setPixmap(QPixmap::fromImage(disImage.scaled(temp[i]->size(), Qt::KeepAspectRatioByExpanding)));
+             temp[i]->setPixmap(QPixmap::fromImage(disImage));
+         }
          myMutex.unlock();
     }
 
@@ -379,3 +346,8 @@ void MainWindow::TestThread_1()
     }
 }
 
+
+void MainWindow::generate3DCloud()
+{
+    ui->tabWidget->setCurrentIndex(4);
+}

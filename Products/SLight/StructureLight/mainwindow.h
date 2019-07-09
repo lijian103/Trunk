@@ -48,6 +48,7 @@ private slots:
     void showGrapPictures();
     void checkBuffersInQueue_total();
 
+    void  generate3DCloud();
 };
 
 
