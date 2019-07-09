@@ -3,6 +3,19 @@
 
 int  nBuffersInQueue_total = 0;
 int  image_id = 0;
+String img_name[9]={
+    "cos_wave_Period_70_initial_phase_-2.0943951023931953.bmp",
+    "cos_wave_Period_70_initial_phase_0.bmp",
+    "cos_wave_Period_70_initial_phase_2.0943951023931953.bmp",
+
+    "cos_wave_Period_64_initial_phase_-2.0943951023931953.bmp",
+    "cos_wave_Period_64_initial_phase_0.bmp",
+    "cos_wave_Period_64_initial_phase_2.0943951023931953.bmp",
+
+    "cos_wave_Period_59_initial_phase_-2.0943951023931953.bmp",
+    "cos_wave_Period_59_initial_phase_0.bmp",
+    "cos_wave_Period_59_initial_phase_2.0943951023931953.bmp",
+                   };
 PylonCamera::PylonCamera()
 {
    // Create an instant camera object with the camera device found first.

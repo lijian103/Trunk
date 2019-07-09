@@ -19,6 +19,7 @@
 #include <opencv2/video/video.hpp>
 // Namespace for using opencv.
 using namespace cv;
+using namespace std;
 std::mutex myMutex;//线程锁
 int grapFlag = 1;
 QImage disImage = QImage(10,10,QImage::Format_Grayscale8);
@@ -46,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QTimer *timerShowHardwarePictures = new QTimer(this);
     connect(timerShowHardwarePictures,SIGNAL(timeout()),this,SLOT(showHardwarePictures()));
-    timerShowHardwarePictures->start(2000);
+    timerShowHardwarePictures->start(3000);
 
     QTimer *timerCheckBuffersInQueue_total = new QTimer(this);
     connect(timerCheckBuffersInQueue_total,SIGNAL(timeout()),this,SLOT(checkBuffersInQueue_total()));
@@ -143,7 +144,7 @@ void MainWindow::grapPictures()
 {
     static int index = 0;
     QDateTime time = QDateTime::currentDateTime();
-    QString str = time.toString("yyyyMMddhhmmss.jpg");
+    QString str = time.toString("yyyyMMddhhmmss_");
 //    string filename = "../../../Pictures/Grap_frame/";
     QString path = ui->lineEdit->text();
     QDir temp;
@@ -155,7 +156,7 @@ void MainWindow::grapPictures()
            qDebug()<<"create Dir ok!!!";
     }
     string filename = path.toStdString();
-    filename=filename+"/"+std::to_string(index)+"_"+str.toStdString();
+    filename=filename+"/"+str.toStdString()+std::to_string(index)+"bmp";
     cv::imwrite(filename,MainWindow::openCvImage);
     index++;
 }
@@ -181,7 +182,7 @@ void MainWindow::saveFourPictures()
 
     QDir dir("../../../Pictures/Hardware_trigger_frame");
     QStringList nameFilters;
-    nameFilters << "*.jpg" << "*.png";
+    nameFilters << "*.jpg" << "*.png"<<"*.bmp";
     QStringList files = dir.entryList(nameFilters, QDir::NoSymLinks|QDir::Dirs|QDir::Files|QDir::Readable|QDir::NoDotAndDotDot , QDir::Name);
     foreach (QString var, files)
     {
@@ -229,6 +230,7 @@ void MainWindow::cameraModeChoose()
 
 void MainWindow::showHardwarePictures()
 {    
+
     if(MainWindow::cameraMode == 2)
     {
 
@@ -242,21 +244,42 @@ void MainWindow::showHardwarePictures()
 //         }
 //         gray_image = imread(Fileadd.toLatin1().data());  //读取图片        // 图像格式转换
          QImage disImage;
-//         disImage.load("../../../Pictures/Hardware_trigger_frame/0.JPG");
-//         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
-//         ui->label_5->setPixmap(QPixmap::fromImage(disImage));
+         QString path="../../../Pictures/Hardware_trigger_frame/";
+         disImage.load(path+QString::fromStdString(img_name[0]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_70_1->setPixmap(QPixmap::fromImage(disImage));
 
-//         disImage.load("../../../Pictures/Hardware_trigger_frame/1.JPG");
-//         //ui->label_6->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_6->size(), Qt::KeepAspectRatioByExpanding)));
-//         ui->label_6->setPixmap(QPixmap::fromImage(disImage));
+         disImage.load(path+QString::fromStdString(img_name[1]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_70_2->setPixmap(QPixmap::fromImage(disImage));
 
-//         disImage.load("../../../Pictures/Hardware_trigger_frame/2.JPG");
-//         //ui->label_7->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_7->size(), Qt::KeepAspectRatioByExpanding)));
-//         ui->label_7->setPixmap(QPixmap::fromImage(disImage));
+         disImage.load(path+QString::fromStdString(img_name[2]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_70_3->setPixmap(QPixmap::fromImage(disImage));
 
-//         disImage.load("../../../Pictures/Hardware_trigger_frame/3.JPG");
-//         //ui->label_8->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_8->size(), Qt::KeepAspectRatioByExpanding)));
-//         ui->label_8->setPixmap(QPixmap::fromImage(disImage));
+         disImage.load(path+QString::fromStdString(img_name[3]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_64_1->setPixmap(QPixmap::fromImage(disImage));
+
+         disImage.load(path+QString::fromStdString(img_name[4]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_64_2->setPixmap(QPixmap::fromImage(disImage));
+
+         disImage.load(path+QString::fromStdString(img_name[5]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_64_3->setPixmap(QPixmap::fromImage(disImage));
+
+         disImage.load(path+QString::fromStdString(img_name[6]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_59_1->setPixmap(QPixmap::fromImage(disImage));
+
+         disImage.load(path+QString::fromStdString(img_name[7]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_59_2->setPixmap(QPixmap::fromImage(disImage));
+
+         disImage.load(path+QString::fromStdString(img_name[8]));
+         //ui->label_5->setPixmap(QPixmap::fromImage(disImage.scaled(ui->label_5->size(), Qt::KeepAspectRatioByExpanding)));
+         ui->label_59_3->setPixmap(QPixmap::fromImage(disImage));
          myMutex.unlock();
     }
 

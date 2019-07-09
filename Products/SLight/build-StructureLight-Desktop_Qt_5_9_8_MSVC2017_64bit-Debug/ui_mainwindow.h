@@ -135,7 +135,6 @@ public:
         font.setPointSize(14);
         tabWidget->setFont(font);
         tabWidget->setAutoFillBackground(true);
-        tabWidget->setStyleSheet(QStringLiteral("QTabBar::tab{width: 200px;height:50px;font:30px;color:black}"));
         tabWidget->setTabPosition(QTabWidget::North);
         tabWidget->setTabShape(QTabWidget::Rounded);
         tabWidget->setDocumentMode(false);
@@ -351,6 +350,7 @@ public:
         palette6.setBrush(QPalette::Disabled, QPalette::Window, brush3);
         label_59_3->setPalette(palette6);
         label_59_3->setAutoFillBackground(true);
+        label_59_3->setScaledContents(true);
 
         gridLayout_2->addWidget(label_59_3, 2, 2, 1, 1);
 
@@ -365,6 +365,7 @@ public:
         palette7.setBrush(QPalette::Disabled, QPalette::Window, brush3);
         label_59_1->setPalette(palette7);
         label_59_1->setAutoFillBackground(true);
+        label_59_1->setScaledContents(true);
 
         gridLayout_2->addWidget(label_59_1, 2, 0, 1, 1);
 
@@ -395,6 +396,7 @@ public:
         palette9.setBrush(QPalette::Disabled, QPalette::Window, brush3);
         label_64_2->setPalette(palette9);
         label_64_2->setAutoFillBackground(true);
+        label_64_2->setScaledContents(true);
 
         gridLayout_2->addWidget(label_64_2, 1, 1, 1, 1);
 
@@ -409,6 +411,7 @@ public:
         palette10.setBrush(QPalette::Disabled, QPalette::Window, brush3);
         label_64_3->setPalette(palette10);
         label_64_3->setAutoFillBackground(true);
+        label_64_3->setScaledContents(true);
 
         gridLayout_2->addWidget(label_64_3, 1, 2, 1, 1);
 
@@ -423,6 +426,7 @@ public:
         palette11.setBrush(QPalette::Disabled, QPalette::Window, brush3);
         label_59_2->setPalette(palette11);
         label_59_2->setAutoFillBackground(true);
+        label_59_2->setScaledContents(true);
 
         gridLayout_2->addWidget(label_59_2, 2, 1, 1, 1);
 
@@ -524,7 +528,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

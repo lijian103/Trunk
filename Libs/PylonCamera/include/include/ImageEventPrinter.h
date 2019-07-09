@@ -14,9 +14,10 @@
 #include <opencv2/calib3d/calib3d.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/video/video.hpp>
-
-extern int image_id;
 using namespace cv;
+extern int image_id;
+extern String img_name[9];
+
 // Namespace for using cout.
 using namespace std;
 namespace Pylon
@@ -41,6 +42,7 @@ namespace Pylon
             // Image grabbed successfully?
 			//新建一个OpenCV image对象.
 			Mat openCvImage;
+
             if (ptrGrabResult->GrabSucceeded())
             {
 				std::cout << "image_id: " << image_id << std::endl;
@@ -49,8 +51,8 @@ namespace Pylon
 				std::cout << std::endl;*/
                 uint8_t *pImageBuffer = (uint8_t *) ptrGrabResult->GetBuffer();
 				openCvImage = cv::Mat(ptrGrabResult->GetHeight(), ptrGrabResult->GetWidth(), CV_8UC1, pImageBuffer);
-				String image_name = "../../../Pictures/Hardware_trigger_frame/"+to_string(image_id);
-				cv::imwrite(image_name+".jpg", openCvImage);
+                String image_name = "../../../Pictures/Hardware_trigger_frame/"+img_name[image_id];
+                cv::imwrite(image_name, openCvImage);
 				image_id++;
 //                if (image_id == 9)
 //				{
@@ -62,7 +64,7 @@ namespace Pylon
 				//namedWindow("OpenCV Display Window", cv::WINDOW_AUTOSIZE); // other options: CV_AUTOSIZE, CV_FREERATIO
 				////显示及时影像.
 				//imshow("OpenCV Display Window", openCvImage);
-				//waitKey(20);
+                //waitKey(20);
             }
             else
             {
