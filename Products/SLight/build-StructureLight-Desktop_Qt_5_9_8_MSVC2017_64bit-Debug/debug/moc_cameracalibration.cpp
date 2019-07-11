@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../StructureLight/cameracalibration.h"
+#include "../../../../../Local_Share_Repositorys_lijian/lijian/Trunk/Products/SLight/StructureLight/cameracalibration.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

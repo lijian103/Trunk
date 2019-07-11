@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../StructureLight/mainwindow.h"
+#include "../../../../../Local_Share_Repositorys_lijian/lijian/Trunk/Products/SLight/StructureLight/mainwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
