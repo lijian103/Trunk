@@ -4,7 +4,24 @@
     <bookmark url="file://$PROJECT_DIR$/tan_test.py" line="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56412a52-03db-42c9-93ed-34051e792bfc" name="Default Changelist" comment="" />
+    <list default="true" id="56412a52-03db-42c9-93ed-34051e792bfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_-2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_-2.0943951023931953.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_0.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_0.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_2.0943951023931953.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_-2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_-2.0943951023931953.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_0.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_0.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_2.0943951023931953.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_-2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_-2.0943951023931953.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_0.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_0.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_2.0943951023931953.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StructureLight/StructureLight.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../StructureLight/StructureLight.pro.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StructureLight/mainwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../StructureLight/mainwindow.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.vc.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.vc.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/mainwindow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/mainwindow.obj" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,12 +31,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/t1.py">
+        <entry file="file://$PROJECT_DIR$/solve_phase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            <state relative-caret-position="231">
+              <caret line="307" column="24" lean-forward="true" selection-start-line="307" selection-start-column="24" selection-end-line="307" selection-end-column="24" />
               <folding>
-                <element signature="e#19#37#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <element signature="e#24#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -28,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sin_wava.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1610">
+              <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -64,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_lib/MyFile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="851">
+            <state relative-caret-position="675">
               <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -155,7 +184,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -181,16 +210,18 @@
         <option value="$PROJECT_DIR$/sin_wava.py" />
         <option value="$PROJECT_DIR$/calib_1.py" />
         <option value="$PROJECT_DIR$/CalibarateCamera.py" />
-        <option value="$PROJECT_DIR$/three_dimession_image.py" />
         <option value="$PROJECT_DIR$/solve_phase" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/three_dimession_image.py" />
+        <option value="$PROJECT_DIR$/solve_phase.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="267" />
-    <option name="y" value="66" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="44" />
+    <option name="y" value="46" />
     <option name="width" value="1618" />
-    <option name="height" value="850" />
+    <option name="height" value="936" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -203,8 +234,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="demo_py_opencv - 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demo_py_opencv - 2" type="462c0819:PsiDirectoryNode" />
+              <item name="demo_py_opencv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo_py_opencv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -216,7 +247,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -231,7 +262,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.solve_phase (1)">
-    <configuration name="sin_wava" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="demo_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -243,9 +274,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sin_wava.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/__init__.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -274,6 +305,9 @@
       <module name="demo_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -323,7 +357,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/three_dimession_image.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -331,24 +365,24 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.sin_wava" />
-      <item itemvalue="Python.solve_phase" />
-      <item itemvalue="Python.three_dimession_image" />
-      <item itemvalue="Python.t1" />
+      <item itemvalue="Python.__init__" />
       <item itemvalue="Python.solve_phase (1)" />
+      <item itemvalue="Python.solve_phase" />
+      <item itemvalue="Python.t1" />
+      <item itemvalue="Python.three_dimession_image" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.solve_phase (1)" />
+        <item itemvalue="Python.three_dimession_image" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.solve_phase" />
         <item itemvalue="Python.t1" />
-        <item itemvalue="Python.sin_wava" />
-        <item itemvalue="Python.three_dimession_image" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\tommy\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -385,22 +419,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="267" y="66" width="1618" height="850" extended-state="0" />
+    <frame x="44" y="46" width="1618" height="936" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14882837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.19111112" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36651585" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31690928" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32849163" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3245997" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.2823872" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32341528" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003167" side_tool="true" weight="0.250646" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49968335" visible="true" weight="0.30659768" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -430,7 +465,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="&quot;1&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/calib_1.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-802801833/cv2/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -616,12 +650,30 @@
     <entry file="file://$PROJECT_DIR$/Htf_7_9_2/cos_wave_Period_59_initial_phase_0.bmp">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
+    <entry file="file://$PROJECT_DIR$/solve_phase" />
+    <entry file="file://$PROJECT_DIR$/t1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="966">
+          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
           <folding>
-            <element signature="e#24#42#0" expanded="true" />
+            <element signature="e#19#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sin_wava.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,16 +694,6 @@
           <caret line="19" selection-start-line="19" selection-end-line="20" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_lib/MyFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -692,42 +734,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sin_wava.py">
+    <entry file="file://$PROJECT_DIR$/my_lib/MyFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="675">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solve_phase">
+    <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="299">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#24#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/solve_phase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
+        <state relative-caret-position="231">
+          <caret line="307" column="24" lean-forward="true" selection-start-line="307" selection-start-column="24" selection-end-line="307" selection-end-column="24" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-          <folding>
-            <element signature="e#19#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

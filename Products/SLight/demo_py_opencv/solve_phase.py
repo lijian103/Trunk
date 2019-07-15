@@ -1,23 +1,27 @@
 import sys
-
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+import three_dimession_image as my3D
 
 freq_1 = 1 / 70
 freq_2 = 1 / 64
 freq_3 = 1 / 59
 
-object_L=30
-object_d=10
-object_T=0.5
-
+object_L=213.5
+object_d=125
+# object_T=914/70
+# 这里和文章里面有歧义，文章里面是像素点数，我的理解为实物表面波的长度。相位差处也有歧义。
+object_T=2.5
 waveLength_1 = freq_1
 waveLength_2 = freq_2
 waveLength_3 = freq_3
 
-def getObjectHeight(deta,object_L,object_T,object_d):
-    objectHeight=object_L*object_T*deta/(2*np.pi*object_d+object_T*deta)
+def getObjectHeight(deta,object_L,object_d,object_T,k):
+    objectHeight=object_L*object_T*k*deta/(2*np.pi*object_d+object_T*deta)
+    return objectHeight
+def getObjectHeight_1(deta,object_L,object_d,k):
+    objectHeight=object_L*k*deta/(object_d+k*deta)
     return objectHeight
 
 def getWrapedPhase(imagePath="./cos_pictures/", Period=70, imgType=".bmp"):
@@ -43,6 +47,7 @@ def getWrapedPhase(imagePath="./cos_pictures/", Period=70, imgType=".bmp"):
     #                     2 * grayImages[1][i][j] - (grayImages[0][i][j] + grayImages[2][i][j])))
     WrapedPhase = np.arctan2((3 ** 0.5) * (grayImages[0] - grayImages[2]),
                              (2 * grayImages[1] - (grayImages[0] + grayImages[2])))
+    # WrapedPhase = cv2.medianBlur(WrapedPhase, 5)
     return WrapedPhase
 
 
@@ -186,6 +191,10 @@ def getWrapedPhaseMultipleFringe(imagePath="./Htf_7_9_2/", Period_1=70, Period_2
     return WrapedPhase_70, WrapedPhase_64, WrapedPhase_59
 
 
+
+
+
+
 if __name__ == "__main__":
     # 验证lib求解相位，产生的图片，可以很好地解相位
     # WrapedPhase_5 = getWrapedPhase(imagePath="./cos_pictures/", Period=5)
@@ -228,20 +237,21 @@ if __name__ == "__main__":
 
     # **********************************没有物体放入的情况*******************************************
     WrapedPhase_70_No_Object, WrapedPhase_64_No_Object, WrapedPhase_59_No_Object = \
-        getWrapedPhaseMultipleFringe(imagePath="./Htf_7_9/", Period_1=70, Period_2=64, Period_3=59)
+        getWrapedPhaseMultipleFringe(imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_13/", Period_1=70, Period_2=64, Period_3=59)
+    # imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_13/"
     unWrapedPhase_1_2__2_3_Un_normalization_No_Object, unWrapedPhase_1_2__2_3_No_Object = \
         unWrapPhase_multipleFre(WrapedPhase_70_No_Object, WrapedPhase_64_No_Object, WrapedPhase_59_No_Object,
                                 waveLength_1, waveLength_2, waveLength_3, flag=0)
     #  showUnWrapedPhaseMap 的6和70是指它解包的周期
     showUnWrapedPhaseMap(unWrapedPhase_1_2__2_3_No_Object, 6, "1_2__2_3_normalization_No_Object")
     showUnWrapedPhaseMap(unWrapedPhase_1_2__2_3_Un_normalization_No_Object, 70, "1_2__2_3_Un_normalization_No_Object")
-    medianBlur_unWrapedPhase_1_2__2_3_Un_normalization_No_Object = cv2.medianBlur(unWrapedPhase_1_2__2_3_Un_normalization_No_Object, 5)
+    medianBlur_unWrapedPhase_1_2__2_3_Un_normalization_No_Object = cv2.medianBlur(unWrapedPhase_1_2__2_3_Un_normalization_No_Object,5)
     showUnWrapedPhaseMap( medianBlur_unWrapedPhase_1_2__2_3_Un_normalization_No_Object, 70, "medianBlur_1_2__2_3_Un_normalization_No_Object")
     test(medianBlur_unWrapedPhase_1_2__2_3_Un_normalization_No_Object,"1")
 
     # **********************************有物体放入的情况*******************************************
     WrapedPhase_70, WrapedPhase_64, WrapedPhase_59 = \
-        getWrapedPhaseMultipleFringe(imagePath="./Htf_7_9_2/", Period_1=70, Period_2=64, Period_3=59)
+        getWrapedPhaseMultipleFringe(imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_13_1/", Period_1=70, Period_2=64, Period_3=59)
     unWrapedPhase_1_2__2_3_Un_normalization, unWrapedPhase_1_2__2_3 = \
         unWrapPhase_multipleFre(WrapedPhase_70, WrapedPhase_64, WrapedPhase_59, waveLength_1, waveLength_2,
                                 waveLength_3, flag=0)
@@ -257,25 +267,46 @@ if __name__ == "__main__":
 
     detaUnWrapedPhase_1_2__2_3_Un_normalization = \
         medianBlur_unWrapedPhase_1_2__2_3_Un_normalization_No_Object - medianBlur_unWrapedPhase_1_2__2_3_Un_normalization
-    medianBlur = cv2.medianBlur(detaUnWrapedPhase_1_2__2_3_Un_normalization, 5)
-
-    detaUnWrapedPhase_1_2__2_3_Un_normalization = medianBlur+400
-    showUnWrapedPhaseMap(detaUnWrapedPhase_1_2__2_3_Un_normalization, 140,
+    medianBlur = cv2.medianBlur(detaUnWrapedPhase_1_2__2_3_Un_normalization,5)
+    detaUnWrapedPhase_1_2__2_3_Un_normalization = medianBlur
+    showUnWrapedPhaseMap(detaUnWrapedPhase_1_2__2_3_Un_normalization+10, 30,
                          "detaUnWrapedPhase_1_2__2_3_Un_normalization")
     test(detaUnWrapedPhase_1_2__2_3_Un_normalization, "detaUnWrapedPhase")
 
-    objectHeight=getObjectHeight(detaUnWrapedPhase_1_2__2_3_Un_normalization, object_L, object_T, object_d)-22.8
+    # 相位常量测试
+    # for i in range(detaUnWrapedPhase_1_2__2_3_Un_normalization.shape[0]):
+    #     for j in range(detaUnWrapedPhase_1_2__2_3_Un_normalization.shape[1]):
+    #         detaUnWrapedPhase_1_2__2_3_Un_normalization[i][j]=34
+
+    objectHeight=getObjectHeight(detaUnWrapedPhase_1_2__2_3_Un_normalization,object_L,object_d,object_T=2.5,k=1)
+    test(objectHeight, "objectHeight")
     for i in range(objectHeight.shape[0]):
         for j in range(objectHeight.shape[1]):
             if objectHeight[i][j]<0 :
                 objectHeight[i][j]=0
 
+    for i in range(objectHeight.shape[0]):
+        for j in range(objectHeight.shape[1]):
+            if objectHeight[i][j]>40 :
+                objectHeight[i][j]=0
 
 
-
-    showUnWrapedPhaseMap(objectHeight, 0.5, "objectHeight")
-    test(objectHeight,"objectHeight")
+    showUnWrapedPhaseMap(objectHeight+5, 8, "objectHeight")
+    test(objectHeight,"objectHeight_discard_low0")
+    # print(objectHeight.shape)
+    # print(objectHeight.shape[0])
 
     # medianBlur=cv2.medianBlur(detaUnWrapedPhase_1_2__2_3_Un_normalization, 5)
     #
     # test(medianBlur,"medianBlur")
+
+
+# ************************************************************
+Z = objectHeight[0:830,160:1100]
+X = np.arange(0, Z.shape[1], 1)
+Y = np.arange(0, Z.shape[0], 1)
+X, Y = np.meshgrid(X, Y)
+my3D.plot_3D_surface(Y,X,Z,elev=45,azim=-35)
+
+plt.show()
+

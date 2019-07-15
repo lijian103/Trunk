@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1184</width>
+    <width>1192</width>
     <height>765</height>
    </rect>
   </property>
@@ -203,7 +203,7 @@ QTabBar::tab:!selected{margin-top:8px;margin-bottom:-8px;}</string>
          <enum>QTabWidget::Rounded</enum>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>0</number>
         </property>
         <property name="documentMode">
          <bool>true</bool>
@@ -1450,8 +1450,8 @@ QTabBar::tab:!selected{margin-top:8px;margin-bottom:-8px;}</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1184</width>
-     <height>38</height>
+     <width>1192</width>
+     <height>23</height>
     </rect>
    </property>
   </widget>
