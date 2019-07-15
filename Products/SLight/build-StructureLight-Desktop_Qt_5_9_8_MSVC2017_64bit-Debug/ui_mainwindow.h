@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
@@ -41,6 +42,7 @@ public:
     QWidget *tab_0;
     QGridLayout *gridLayout_4;
     QVBoxLayout *verticalLayout;
+    QCheckBox *checkBox;
     QSpacerItem *verticalSpacer_3;
     QSpacerItem *horizontalSpacer_3;
     QLabel *label_9;
@@ -179,6 +181,18 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        checkBox = new QCheckBox(tab_0);
+        checkBox->setObjectName(QStringLiteral("checkBox"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(checkBox->sizePolicy().hasHeightForWidth());
+        checkBox->setSizePolicy(sizePolicy);
+        checkBox->setFont(font1);
+        checkBox->setChecked(false);
+
+        verticalLayout->addWidget(checkBox);
+
         verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         verticalLayout->addItem(verticalSpacer_3);
@@ -247,11 +261,11 @@ public:
         tabWidget->addTab(tab_1, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(11);
-        sizePolicy.setVerticalStretch(10);
-        sizePolicy.setHeightForWidth(tab_2->sizePolicy().hasHeightForWidth());
-        tab_2->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(11);
+        sizePolicy1.setVerticalStretch(10);
+        sizePolicy1.setHeightForWidth(tab_2->sizePolicy().hasHeightForWidth());
+        tab_2->setSizePolicy(sizePolicy1);
         tab_2->setAutoFillBackground(true);
         label_10 = new QLabel(tab_2);
         label_10->setObjectName(QStringLiteral("label_10"));
@@ -361,11 +375,11 @@ public:
 
         label_70_1 = new QLabel(tab_3);
         label_70_1->setObjectName(QStringLiteral("label_70_1"));
-        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(label_70_1->sizePolicy().hasHeightForWidth());
-        label_70_1->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(label_70_1->sizePolicy().hasHeightForWidth());
+        label_70_1->setSizePolicy(sizePolicy2);
         QPalette palette6;
         palette6.setBrush(QPalette::Active, QPalette::Base, brush);
         palette6.setBrush(QPalette::Active, QPalette::Window, brush3);
@@ -486,11 +500,11 @@ public:
         verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
-        groupBox->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
+        groupBox->setSizePolicy(sizePolicy3);
         QFont font6;
         font6.setPointSize(18);
         groupBox->setFont(font6);
@@ -581,6 +595,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "StructuredLight", Q_NULLPTR));
+        checkBox->setText(QApplication::translate("MainWindow", "USB\347\233\270\346\234\272\346\211\223\345\274\200/\345\205\263\351\227\255", Q_NULLPTR));
         label_9->setText(QApplication::translate("MainWindow", "TextLabel", Q_NULLPTR));
         label_4->setText(QApplication::translate("MainWindow", "\344\277\235\345\255\230\350\267\257\345\276\204\357\274\232", Q_NULLPTR));
         lineEdit->setText(QApplication::translate("MainWindow", "D:/Trunk/Pictures/Grap_frame", Q_NULLPTR));

@@ -4,7 +4,29 @@
     <bookmark url="file://$PROJECT_DIR$/tan_test.py" line="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56412a52-03db-42c9-93ed-34051e792bfc" name="Default Changelist" comment="" />
+    <list default="true" id="56412a52-03db-42c9-93ed-34051e792bfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../StructureLight/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../StructureLight/mainwindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StructureLight/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/../StructureLight/mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StructureLight/mainwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../StructureLight/mainwindow.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/Makefile.Debug" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/Makefile.Debug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/Makefile.Release" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/Makefile.Release" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.vc.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.vc.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/camera.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/camera.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/cameracalibration.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/cameracalibration.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/mainwindow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/mainwindow.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_cameracalibration.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_cameracalibration.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_cameracalibration.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_cameracalibration.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_mainwindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_mainwindow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/moc_mainwindow.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/qrc_logo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/qrc_logo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/qrc_logo.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/qrc_logo.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/ui_mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/ui_mainwindow.h" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="115">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -200,9 +222,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="933" />
-    <option name="y" value="95" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="121" />
+    <option name="y" value="63" />
     <option name="width" value="1618" />
     <option name="height" value="936" />
   </component>
@@ -402,7 +424,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="933" y="95" width="1618" height="936" extended-state="0" />
+    <frame x="121" y="63" width="1618" height="936" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14882837" />
@@ -739,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#24#42#0" expanded="true" />
           </folding>
