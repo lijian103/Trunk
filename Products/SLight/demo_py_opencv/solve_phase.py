@@ -237,8 +237,8 @@ if __name__ == "__main__":
 
     # **********************************没有物体放入的情况*******************************************
     WrapedPhase_70_No_Object, WrapedPhase_64_No_Object, WrapedPhase_59_No_Object = \
-        getWrapedPhaseMultipleFringe(imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_13/", Period_1=70, Period_2=64, Period_3=59)
-    # imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_13/"
+        getWrapedPhaseMultipleFringe(imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_12/", Period_1=70, Period_2=64, Period_3=59)
+    # imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_9/"
     unWrapedPhase_1_2__2_3_Un_normalization_No_Object, unWrapedPhase_1_2__2_3_No_Object = \
         unWrapPhase_multipleFre(WrapedPhase_70_No_Object, WrapedPhase_64_No_Object, WrapedPhase_59_No_Object,
                                 waveLength_1, waveLength_2, waveLength_3, flag=0)
@@ -251,7 +251,7 @@ if __name__ == "__main__":
 
     # **********************************有物体放入的情况*******************************************
     WrapedPhase_70, WrapedPhase_64, WrapedPhase_59 = \
-        getWrapedPhaseMultipleFringe(imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_13_1/", Period_1=70, Period_2=64, Period_3=59)
+        getWrapedPhaseMultipleFringe(imagePath="../../../Pictures/Hardware_trigger_frame/Htf_7_12_ya/", Period_1=70, Period_2=64, Period_3=59)
     unWrapedPhase_1_2__2_3_Un_normalization, unWrapedPhase_1_2__2_3 = \
         unWrapPhase_multipleFre(WrapedPhase_70, WrapedPhase_64, WrapedPhase_59, waveLength_1, waveLength_2,
                                 waveLength_3, flag=0)
@@ -302,11 +302,11 @@ if __name__ == "__main__":
 
 
 # ************************************************************
-Z = objectHeight[0:830,160:1100]
+Z = objectHeight[0:830,160:]
 X = np.arange(0, Z.shape[1], 1)
 Y = np.arange(0, Z.shape[0], 1)
 X, Y = np.meshgrid(X, Y)
 my3D.plot_3D_surface(Y,X,Z,elev=45,azim=-35)
-
+# my3D.plot_3D_surface(Y,X,Z,elev=45,azim=-10)
 plt.show()
 

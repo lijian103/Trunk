@@ -4,24 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/tan_test.py" line="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56412a52-03db-42c9-93ed-34051e792bfc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_-2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_-2.0943951023931953.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_0.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_0.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_59_initial_phase_2.0943951023931953.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_-2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_-2.0943951023931953.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_0.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_0.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_64_initial_phase_2.0943951023931953.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_-2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_-2.0943951023931953.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_0.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_0.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_2.0943951023931953.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Pictures/Hardware_trigger_frame/cos_wave_Period_70_initial_phase_2.0943951023931953.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StructureLight/StructureLight.pro.user" beforeDir="false" afterPath="$PROJECT_DIR$/../StructureLight/StructureLight.pro.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StructureLight/mainwindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/../StructureLight/mainwindow.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.vc.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/StructureLight.vc.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/mainwindow.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../build-StructureLight-Desktop_Qt_5_9_8_MSVC2017_64bit-Debug/debug/mainwindow.obj" afterDir="false" />
-    </list>
+    <list default="true" id="56412a52-03db-42c9-93ed-34051e792bfc" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/solve_phase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="307" column="24" lean-forward="true" selection-start-line="307" selection-start-column="24" selection-end-line="307" selection-end-column="24" />
+            <state relative-caret-position="346">
+              <caret line="252" column="54" lean-forward="true" selection-start-line="252" selection-start-column="54" selection-end-line="252" selection-end-column="54" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -42,10 +25,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="230">
               <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
@@ -218,8 +201,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
-    <option name="y" value="46" />
+    <option name="x" value="933" />
+    <option name="y" value="95" />
     <option name="width" value="1618" />
     <option name="height" value="936" />
   </component>
@@ -419,10 +402,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="46" width="1618" height="936" extended-state="0" />
+    <frame x="933" y="95" width="1618" height="936" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14882837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14882837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -435,7 +418,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32341528" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003167" side_tool="true" weight="0.250646" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49968335" visible="true" weight="0.30659768" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49968335" visible="true" weight="0.30659768" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -744,22 +727,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
+    <entry file="file://$PROJECT_DIR$/solve_phase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="346">
+          <caret line="252" column="54" lean-forward="true" selection-start-line="252" selection-start-column="54" selection-end-line="252" selection-end-column="54" />
           <folding>
-            <element signature="e#24#42#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solve_phase.py">
+    <entry file="file://$PROJECT_DIR$/three_dimession_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="307" column="24" lean-forward="true" selection-start-line="307" selection-start-column="24" selection-end-line="307" selection-end-column="24" />
+        <state relative-caret-position="230">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#24#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
