@@ -9,17 +9,7 @@
 #include <Windows.h>
 #include <iostream>
 #include "Inc/Camera.h"
-
-// 加载OpenCV API
-#include <opencv2/opencv.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
-#include <opencv2/calib3d/calib3d.hpp>
-#include <opencv2/core/core.hpp>
-#include <opencv2/video/video.hpp>
-// Namespace for using opencv.
 using namespace cv;
-using namespace std;
 std::mutex myMutex;//线程锁
 int grapFlag = 1;
 QImage disImage = QImage(10,10,QImage::Format_Grayscale8);
@@ -75,6 +65,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->radioButton_4,SIGNAL(clicked(bool)),
             this,SLOT(cameraModeChoose()));
 
+    //**************check BOX
+    connect(ui->checkBox,SIGNAL( stateChanged(int)),
+            this,SLOT(getStartOrOff_UsbCamera(int)));
+
     //**************grap pictures Button***************
     connect(ui->pushButton,SIGNAL(clicked(bool)),
                 this,SLOT(grapPictures()));
@@ -125,9 +119,42 @@ void MainWindow::checkBuffersInQueue_total()
     }
 }
 
+void MainWindow::getStartOrOff_UsbCamera(int state)
+{
+    if (state == Qt::Checked) // "选中"
+    {
+        //从摄像头捕获视频
+        if(videoCap.open(0))
+        {
+            MainWindow::openCvImage = Mat::zeros(videoCap.get(CAP_PROP_FRAME_HEIGHT), videoCap.get(CAP_PROP_FRAME_WIDTH), CV_8UC3);
+            qDebug() <<"********************USB camera open********************"<<endl;
+        }
+
+    }
+    else // 未选中 - Qt::Unchecked
+    {
+        videoCap.release();
+        qDebug() <<"********************USB camera release********************"<<endl;
+    }
+
+}
+
 
 void MainWindow::showGrapPictures()
 {
+    if(MainWindow::cameraMode == 0)
+    {
+        if(ui->checkBox->isChecked()==true)
+        {
+            videoCap>>MainWindow::openCvImage;
+            if(MainWindow::openCvImage.data)
+            {
+                cvtColor(MainWindow::openCvImage, MainWindow::openCvImage, cv::COLOR_BGR2GRAY);//Qt中支持的是RGB图像, OpenCV中支持的是BGR
+                QImage disImage = QImage((uchar*)(MainWindow::openCvImage.data), MainWindow::openCvImage.cols, MainWindow::openCvImage.rows, QImage::Format_Grayscale8);
+                ui->label_9->setPixmap(QPixmap::fromImage(disImage));
+            }
+        }
+    }
     myMutex.lock();
     if(MainWindow::cameraMode == 1 && grapFlag == 0 && MainWindow::cameraModeOlder == 1)
     {

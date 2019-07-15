@@ -6,8 +6,16 @@
 #include <QDebug>
 #include <thread>
 #include <mutex>
-#include <opencv2/core/core.hpp>
+// 加载OpenCV API
 #include <opencv2/opencv.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/calib3d/calib3d.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/video/video.hpp>
+// Namespace for using opencv.
+using namespace std;
+
 extern std::mutex myMutex;//线程锁
 extern int grapFlag;//抓取标志
 using namespace std;
@@ -31,8 +39,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    cv::VideoCapture videoCap;
     QButtonGroup *groupButton1;
     std::thread *new_thread;
+
 
 protected:
      void closeEvent(QCloseEvent *event);
@@ -47,8 +57,8 @@ private slots:
     void selectDirPathDialg_grapMode();
     void showGrapPictures();
     void checkBuffersInQueue_total();
-
-    void  generate3DCloud();
+    void getStartOrOff_UsbCamera(int state);
+    void generate3DCloud();
 };
 
 
